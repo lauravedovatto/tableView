@@ -8,51 +8,6 @@
 
 import UIKit
 
-class Empresa {
-    var chefe: Funcionario?
-    var funcionarios = [Funcionario]()
-    
-    func comecarAlmoco() {
-        funcionarios.forEach({ $0.almocar() })
-    }
-    
-    func contratarChefe(chefe: Funcionario) {
-        self.chefe = chefe
-        self.funcionarios.append(chefe)
-    }
-}
-
-protocol Funcionario {
-    func almocar()
-    func trabalhar()
-}
-
-class TechLead: Funcionario {
-    func almocar() {
-        print("O chefe está almoçando...")
-    }
-    
-    func trabalhar() {
-        
-    }
-}
-
-class Programador: Funcionario {
-    var name: String
-    
-    init(name: String) {
-        self.name = name
-    }
-    
-    func almocar() {
-        print(name + " está almoçando...")
-    }
-    
-    func trabalhar() {
-        
-    }
-}
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -62,12 +17,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         tableView.dataSource = self
-        
-        let itau = Empresa()
-        itau.contratarChefe(chefe: TechLead())
-        itau.funcionarios.append(Programador(name: "Minatti"))
-
-        itau.comecarAlmoco()
     }
 
 
