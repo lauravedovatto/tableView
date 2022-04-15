@@ -12,6 +12,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    let nomes = [
+        "Minatti",
+        "Thay",
+        "Laura"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,18 +25,17 @@ class ViewController: UIViewController {
         tableView.dataSource = self
     }
 
-
 }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return nomes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "Minatti"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath) as? NameTableViewCell
+        cell?.nameLabel?.text = nomes[indexPath.row]
         
-        return cell
+        return cell ?? UITableViewCell()
     }
 }

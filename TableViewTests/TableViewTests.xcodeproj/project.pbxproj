@@ -12,6 +12,7 @@
 		BCFF99352809ACCF00CE9B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF99332809ACCF00CE9B1A /* Main.storyboard */; };
 		BCFF99372809ACD100CE9B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF99362809ACD100CE9B1A /* Assets.xcassets */; };
 		BCFF993A2809ACD100CE9B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF99382809ACD100CE9B1A /* LaunchScreen.storyboard */; };
+		BCFF99422809B5F200CE9B1A /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF99412809B5F200CE9B1A /* NameTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BCFF99362809ACD100CE9B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFF99392809ACD100CE9B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCFF993B2809ACD100CE9B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF99412809B5F200CE9B1A /* NameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BCFF99362809ACD100CE9B1A /* Assets.xcassets */,
 				BCFF99382809ACD100CE9B1A /* LaunchScreen.storyboard */,
 				BCFF993B2809ACD100CE9B1A /* Info.plist */,
+				BCFF99412809B5F200CE9B1A /* NameTableViewCell.swift */,
 			);
 			path = TableViewTests;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFF99422809B5F200CE9B1A /* NameTableViewCell.swift in Sources */,
 				BCFF99322809ACCF00CE9B1A /* ViewController.swift in Sources */,
 				BCFF99302809ACCF00CE9B1A /* AppDelegate.swift in Sources */,
 			);
