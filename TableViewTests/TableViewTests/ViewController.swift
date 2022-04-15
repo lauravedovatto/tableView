@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         tableView.dataSource = self
+        tableView.delegate = self
     }
 
 }
@@ -37,5 +38,11 @@ extension ViewController: UITableViewDataSource {
         cell?.nameLabel?.text = nomes[indexPath.row]
         
         return cell ?? UITableViewCell()
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(nomes[indexPath.row])
     }
 }
